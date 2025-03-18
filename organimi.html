@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Структура Компании SWS Group</title>
+    <link rel="stylesheet" href="organimi.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <svg class="icon logo-sws-2" height="80" viewBox="0 0 220 80" width="220">
+            <use xlink:href="sprite.svg#logo-sws-2"></use>
+        </svg>
+    </div>
+</div>
+<!-- Затемнение для попапа -->
+<div class="overlay"></div>
+<!-- Универсальный попап -->
+<div id="employeePopup" class="popup">
+    <div class="popup-content">
+        <img class="employee-photo" src="" alt="Фото сотрудника">
+        <p class="employee-department"></p>
+        <p class="employee-position"></p>
+        <p class="employee-name"></p>
+        <p class="employee-birthday"></p>
+        <p class="employee-tel"></p>
+        <p class="employee-tel1"></p>
+        <p class="employee-email"></p>
+        <!--<p class="employee-manager"></p>-->
+        <p class="employee-comments"></p>
+        <div class="back-call-form-container__button-container">
+            <button class="close">
+                <svg class="icon close-btn-vector" height="40" viewBox="0 0 40 40" width="40">
+                    <use href="sprite.svg#close-btn-vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="swsgroup" id="company-structure">
+    <h2><a href="./organimi.html">Структура компании SWS Group</a></h2>
+    <h2><a href="./zakupki.html">Структура подрядчиков SWS Group</a></h2>
+    <div class="company_structure" onclick="viewdiv('box1')">Директор Компании</div>
+    <div class="all_this" id="box1">
+        <div class="info-container">
+            <div class="information">
+                <div class="trigger" data-popup-id="Director">
+                    <img class="employee-photo" src="/image/Andrey_Churkin.jpg" alt="Фото сотрудника">
+                    <div class="name_class">Андрей Чуркин</div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box11')">Бизнес Ассистент</div>
+                <div class="info-container">
+                    <div class="information" id="box11">
+                        <div class="trigger" data-popup-id="Business Assistant">
+                            <img class="employee-photo" src="/image/Anna_Baikova.jpg" alt="Фото сотрудника">
+                            <div class="name_class">Анна Байкова</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box12')">Креативный директор</div>
+                <div class="info-container">
+                    <div class="information" id="box12">
+                        <div class="trigger" data-popup-id="Creative Director">
+                            <img class="employee-photo" src="/image/net_photo8.jpg" alt="Фото сотрудника">
+                            <div class="name_class">Евгения Лаврухина</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_structure" onclick="viewdiv('box2');">Строительство</div>
+    <div class="information_all" id="box2">
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box21');">Директор по строительству</div>
+                <div class="info-container">
+                    <div class="information" id="box21">
+                        <div class="trigger" data-popup-id="Director of Construction">
+                            <img class="employee-photo" src="/image/net_photo3.jpg" alt="Фото сотрудника">
+                            <div class="name_class">Vacant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box22');">Руководитель отдела исполнения и
+                    технологий
+                </div>
+                <div class="info-container">
+                    <div class="information" id="box22">
+                        <div class="trigger" data-popup-id="Head of the Department of Execution and Technology">
+                            <img class="employee-photo" src="/image/net_photo4.jpg" alt="Фото сотрудника">
+                            <div class="name_class">Vacant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box23');">Руководитель департамента SPA&WELLNESS</div>
+                <div class="info-container">
+                    <div class="information" id="box23">
+                        <div class="trigger" data-popup-id="Head of the SPA&WELLNESS Department">
+                            <img class="employee-photo" src="/image/Yuriy_Churkin.jpg" alt="Фото сотрудника">
+                            <div class="name_class">Юрий Чуркин</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box24');">Руководители проектов</div>
+                <div class="project_managers" id="box24">
+                    <div class="info-container">
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Project manager1">
+                                <img class="employee-photo" src="/image/net_photo5.jpg" alt="Фото сотрудника">
+                                <div class="name_class">Константин Серадзинов</div>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Project manager2">
+                                <img class="employee-photo" src="/image/Timur_Bedretdinov.jpg" alt="Фото сотрудника">
+                                <div class="name_class">Тимур Бедретдинов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Project manager3">
+                                <img class="employee-photo" src="/image/Alexey_Sherbakov.jpg" alt="Фото сотрудника">
+                                <div class="name_class">Алексей Щербаков</div>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Project manager4">
+                                <img class="employee-photo" src="/image/Maxim_Naumenko.jpg" alt="Фото сотрудника">
+                                <div class="name_class">Максим Науменко</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box25');">Прорабы</div>
+                <div class="proraby" id="box25">
+                    <div class="info-container">
+                        <div class="all_this">
+                            <div class="info-container">
+                                <div class="information">
+                                    <div class="trigger" data-popup-id="Project manager4">
+                                        <img class="employee-photo" src="/image/Andrey_Sidorov.jpg" alt="Фото сотрудника"> Андрей Сидоров
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company_structure1" onclick="viewdiv('box26')" id="BrigadaSidorov">Бригада</div>
+                            <div class="brigada" id="box26">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Бригадир</p>
+                                        <div class="trigger" data-popup-id="The foreman10">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Вадим Галиеф
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Сантехники:</p>
+                                        <div class="trigger" data-popup-id="Plumber1">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Серафима Крылова
+                                        </div>
+                                        <div class="trigger" data-popup-id="Plumber2">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Генадий Зиновьев
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <p class="people">Электрики:</p>
+                                        <div class="trigger" data-popup-id="Electrician1">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Рудольф Рейн
+                                        </div>
+                                        <div class="trigger" data-popup-id="Electrician2">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Алексей Песегов
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Плотники:</p>
+                                        <div class="trigger" data-popup-id="Carpenter">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Дмитрий Данилов
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <p class="people">Разнорабочие:</p>
+                                        <div class="trigger" data-popup-id="The handyman17">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Дилшод Муродалиев
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Плиточники:</p>
+                                        <div class="trigger" data-popup-id="Tiler">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Игорь Соловьев
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <p class="people">Маляры:</p>
+                                        <div class="trigger" data-popup-id="Painter1">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Виктор Бобырев
+                                        </div>
+                                        <div class="trigger" data-popup-id="Painter2">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Марина Бобырева
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Вентиляционщики:</p>
+                                        <div class="trigger" data-popup-id="Ventilators1">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Данила Демихов
+                                        </div>
+                                        <div class="trigger" data-popup-id="Ventilators2">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Андрей Донченко
+                                        </div>
+                                        <div class="trigger" data-popup-id="Ventilators">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Сергей Пидченко
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="info-container">
+                                <div class="information">
+                                    <div class="trigger" data-popup-id="The foreman2">
+                                        <img class="employee-photo" src="/image/net_photo2.jpg" alt="Фото сотрудника"> Виталий Наумов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company_structure1" onclick="viewdiv('box27')" id="BrigadaNaumov">Бригада</div>
+                            <div class="brigada" id="box27">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Бригадир</p>
+                                        <div class="trigger" data-popup-id="The foreman6">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника"-->Сергей Николаев
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Плотники/монолитчики:</p>
+                                        <div class="trigger" data-popup-id="Carpenter, monolithic1">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Юрий Коркодинов
+                                        </div>
+                                        <div class="trigger" data-popup-id="Carpenter, monolithic2">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Андрей Маркелов
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <p class="people">Плотники/монолитчики:</p>
+                                        <div class="trigger" data-popup-id="Carpenter, monolithic3">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Григорий Наумов
+                                        </div>
+                                        <div class="trigger" data-popup-id="Carpenter, monolithic4">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Иван Григорьев
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="info-container">
+                                <div class="information">
+                                    <div class="trigger" data-popup-id="The foreman3">
+                                        <img class="employee-photo" src="/image/net_photo.jpg" alt="Фото сотрудника">Vacant
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company_structure1" onclick="viewdiv('box28')" id="BrigadaVacant">Бригада</div>
+                            <div class="brigada" id="box28">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Бригадир</p>
+                                        <div class="trigger" data-popup-id="The foreman8">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Андрей Иванов
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Разнорабочие:</p>
+                                        <div class="trigger" data-popup-id="The handyman13">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Владимир Присакарь
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman14">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Александр Подставкин
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Бригадир</p>
+                                        <div class="trigger" data-popup-id="The foreman7">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Евгений Ловушкин
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Разнорабочие:</p>
+                                        <div class="trigger" data-popup-id="The handyman8">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Андрей Дроздов
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman9">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Павел Татаринцев
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman10">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Генадий Столяров
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <p class="people">Разнорабочие:</p>
+                                        <div class="trigger" data-popup-id="The handyman11">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Валентин Демидов
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman12">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Александр Перфилов
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Бригадир</p>
+                                        <div class="trigger" data-popup-id="The foreman9">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Александр Коломиец
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Разнорабочие:</p>
+                                        <div class="trigger" data-popup-id="The handyman15">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Сергей Сазоненков
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman16">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Алексей Чернов
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="info-container">
+                                <div class="information">
+                                    <div class="trigger" data-popup-id="The foreman3">
+                                        <img class="employee-photo" src="/image/Andrey_Kislicin.jpg" alt="Фото сотрудника">Андрей Кислицын
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company_structure1" onclick="viewdiv('box29')" id="BrigadaKislicin">Бригада
+                            </div>
+                            <div class="brigada" id="box29">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Бригадир</p>
+                                        <div class="trigger" data-popup-id="The foreman5">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Юрий Катаев
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Разнорабочие:</p>
+                                        <div class="trigger" data-popup-id="">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Вадим
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman2">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Максим
+                                        </div>
+                                        <div class="trigger" data-popup-id="">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Александр
+                                        </div>
+                                        <div class="trigger" data-popup-id="">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Владимир
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <p class="people">Разнорабочие:</p>
+                                        <div class="trigger" data-popup-id="">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Николай
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman6">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Сергей
+                                        </div>
+                                        <div class="trigger" data-popup-id="The handyman7">
+                                            <!--<img class="employee-photo" src="/image/" alt="Фото сотрудника">-->Андрей
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_structure" onclick="viewdiv('box3');">Производственно - технический отдел</div>
+    <div class="information_all" id="box3">
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box31');">Отдел сметной документации</div>
+                <div class="smetnaya_documentacia" id="box31">
+                    <div class="info-container">
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Estimator1">
+                                <img class="employee-photo" src="/image/Vladimir_Druzinin.jpg" alt="Фото сотрудника">Владимир Дружинин
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Estimator2">
+                                <img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">Илья Красанов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box32');">Проектная документация</div>
+                <div class="project_documentation" id="box32">
+                    <div class="info-container">
+                        <div class="all_this">
+                            <div class="company_structure1" onclick="viewdiv('box33');">Архитектурные решения</div>
+                            <div class="architectural_solutions" id="box33">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Chief Architect">
+                                            <img class="employee-photo" src="/image/Svetlana_Titova.jpg" alt="Фото сотрудника">Светлана Титова
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Architect1">
+                                            <img class="employee-photo" src="/image/net_photo6.jpg" alt="Фото сотрудника">Елизавета Портнова
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Architect2">
+                                            <img class="employee-photo" src="/image/net_photo7.jpg" alt="Фото сотрудника">Александра Милова
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Architect3">
+                                            <img class="employee-photo" src="/image/net_photo8.jpg" alt="Фото сотрудника">Екатерина Цветкова
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Architect4">
+                                            <img class="employee-photo" src="/image/net_photo5.jpg" alt="Фото сотрудника">Сергей Кутлер
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Architect5">
+                                            <img class="employee-photo" src="/image/net_photo.jpg" alt="Фото сотрудника">Алексей Косарев
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="company_structure1" onclick="viewdiv('box34');">Конструкции деревянные
+                            </div>
+                            <div class="wooden_structures" id="box34">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Частный КД</p>
+                                        <div class="trigger" data-popup-id="Private CD">
+                                            <!--<img class="employee-photo" src="/image/net_photo6.jpg" alt="Фото сотрудника">-->Мария
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">ДСК Вега:</p>
+                                        <div class="trigger" data-popup-id="Employee1">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Максим Раяпу
+                                        </div>
+                                        <div class="trigger" data-popup-id="Employee2">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Ольга Зелинская
+                                        </div>
+                                        <div class="trigger" data-popup-id="Employee3">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Александр Маринин
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="company_structure1" onclick="viewdiv('box35');">Конструкции железобетонные
+                            </div>
+                            <div class="reinforced_concrete_structures" id="box35">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Стройгеология:</p>
+                                        <div class="trigger" data-popup-id="Stroygeology">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->No Name
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Промонолит:</p>
+                                        <div class="trigger" data-popup-id="Employee4">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Мария Сергеева
+                                        </div>
+                                        <div class="trigger" data-popup-id="Employee5">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Владимир
+                                        </div>
+                                        <div class="trigger" data-popup-id="Employee6">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Дмитрий Чашечников
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <div class="all_this">
+                            <div class="company_structure1" onclick="viewdiv('box36');">Проектирование бассейнов и спа
+                            </div>
+                            <div class="pool_and_spa_design" id="box36">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">СВ Пул:</p>
+                                        <div class="trigger" data-popup-id="SV Pool">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Евгений
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <p class="people">Альфа СПА:</p>
+                                        <div class="trigger" data-popup-id="Alpha SPA">
+                                            <!--<img class="employee-photo" src="/image/Ilya_Krasanov.jpg" alt="Фото сотрудника">-->Максим Науменко
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="company_structure1" onclick="viewdiv('box37');">Дизайн проект</div>
+                            <div class="design_project" id="box37">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Designer2">
+                                            <img class="employee-photo" src="/image/Yana_Kislyakova.jpg" alt="Фото сотрудника">Яна Кислякова
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Designer1">
+                                            <img class="employee-photo" src="/image/net_photo7.jpg" alt="Фото сотрудника">Александра Милова
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Designer3">
+                                            <img class="employee-photo" src="/image/net_photo2.jpg" alt="Фото сотрудника">Степан Цымбалюк
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Designer4">
+                                            <img class="employee-photo" src="/image/net_photo6.jpg" alt="Фото сотрудника">Яна Корбан
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Designer5">
+                                            <img class="employee-photo" src="/image/net_photo8.jpg" alt="Фото сотрудника">Мария Соколова
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Designer6">
+                                            <img class="employee-photo" src="/image/net_photo3.jpg" alt="Фото сотрудника">Артем(Питер)Лид
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="company_structure1" onclick="viewdiv('box38');">Инженерные системы</div>
+                            <div class="engineering_systems" id="box38">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Employee7">
+                                            <img class="employee-photo" src="/image/net_photo5.jpg" alt="Фото сотрудника">Дмитрий
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Employee8">
+                                            <img class="employee-photo" src="/image/net_photo8.jpg" alt="Фото сотрудника">Марина К
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Employee9">
+                                            <img class="employee-photo" src="/image/net_photo7.jpg" alt="Фото сотрудника">Оксана
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <p class="people">Русклимат:</p>
+                                        <div class="trigger" data-popup-id="Employee10">
+                                            <!--<img class="employee-photo" src="/image/Yana_Kislyakova.jpg" alt="Фото сотрудника">-->Пётр Окунев
+                                        </div>
+                                        <div class="trigger" data-popup-id="Chief Engineer of Rusklimat">
+                                            <!--<img class="employee-photo" src="/image/Yana_Kislyakova.jpg" alt="Фото сотрудника">-->Анна
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_this">
+                            <div class="company_structure1" onclick="viewdiv('box39');">Ландшафт</div>
+                            <div class="landscape" id="box39">
+                                <div class="info-container">
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Employee11">
+                                            <img class="employee-photo" src="/image/Vasilisa_Vyaznikova.jpg" alt="Фото сотрудника">Василиса Вязникова
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="trigger" data-popup-id="Employee12">
+                                            <img class="employee-photo" src="/image/net_photo6.jpg" alt="Фото сотрудника">Мария Лукьянова
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_structure" onclick="viewdiv('box4');">Отдел продаж</div>
+    <div class="information_all" id="box4">
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box41');">Коммерческий директор</div>
+                <div class="info-container">
+                    <div class="information" id="box41">
+                        <div class="trigger" data-popup-id="Commercial Director">
+                            <img class="employee-photo" src="/image/Alexey_Smirnov.jpg" alt="Фото сотрудника">Алексей Смирнов
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box42');">Менеджеры по продажам</div>
+                <div class="prodagi" id="box42">
+                    <div class="info-container">
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Sales Manager1">
+                                <img class="employee-photo" src="/image/Natalya_Boyarinzeva.jpg" alt="Фото сотрудника">Наталья Бояринцева
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Sales Manager2">
+                                <img class="employee-photo" src="/image/Natalya_Sadikova.jpg" alt="Фото сотрудника">Наталья Садикова
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_structure" onclick="viewdiv('box5');">Отдел рекламы и маркетинга</div>
+    <div class="information_all" id="box5">
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box51');">Руководитель Маркетинга</div>
+                <div class="info-container">
+                    <div class="information" id="box51">
+                        <div class="trigger" data-popup-id="Head of Marketing">
+                            <img class="employee-photo" src="/image/Alexander_Novikov.jpg" alt="Фото сотрудника">Александр Новиков
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box52');">Маркетолог</div>
+                <div class="info-container">
+                    <div class="information" id="box52">
+                        <div class="trigger" data-popup-id="Marketing specialist">
+                            <img class="employee-photo" src="/image/net_photo1.jpg" alt="Фото сотрудника">Vacant
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box53');">Таргетолог</div>
+                <div class="info-container">
+                    <div class="information" id="box53">
+                        <div class="trigger" data-popup-id="The targetologist">
+                            <img class="employee-photo" src="/image/net_photo3.jpg" alt="Фото сотрудника">Vacant
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box54');">Специалист по контекстной рекламе</div>
+                <div class="info-container">
+                    <div class="information" id="box54">
+                        <div class="trigger" data-popup-id="Contextual Advertising Specialist">
+                            <img class="employee-photo" src="/image/net_photo8.jpg" alt="Фото сотрудника">Юлия Сапрыкина
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box55');">Контент</div>
+                <div class="smetnaya_documentacia" id="box55">
+                    <div class="info-container">
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Content Maker">
+                                <img class="employee-photo" src="/image/Kseniya_Zegalina.jpg" alt="Фото сотрудника">Ксения Жегалина
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Voice Actor">
+                                <img class="employee-photo" src="/image/net_photo6.jpg" alt="Фото сотрудника">Анастасия Борисова
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="trigger" data-popup-id="Video Editor">
+                                <img class="employee-photo" src="/image/net_photo7.jpg" alt="Фото сотрудника">София Лазарева
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="trigger" data-popup-id="The copywriter">
+                                <img class="employee-photo" src="/image/net_photo8.jpg" alt="Фото сотрудника">Татьяна Яблокова
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_structure" onclick="viewdiv('box6');">Отдел финансов</div>
+    <div class="information_all" id="box6">
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box61');">Главный бухгалтер</div>
+                <div class="info-container">
+                    <div class="information" id="box61">
+                        <div class="trigger" data-popup-id="Chief accountant">
+                            <img class="employee-photo" src="/image/Elena_Zjidkova.jpg" alt="Фото сотрудника">Елена Жидкова
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box62');">Помощник бухгалтера</div>
+                <div class="info-container">
+                    <div class="information" id="box62">
+                        <div class="trigger" data-popup-id="Accountant's Assistant">
+                            <img class="employee-photo" src="/image/Anastasia_Bondar.jpg" alt="Фото сотрудника">Анастасия Бондарь
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_structure" onclick="viewdiv('box7');">Отдел информационных технологий</div>
+    <div class="information_all" id="box7">
+        <div class="info-container">
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box71');">Руководитель отдела</div>
+                <div class="info-container">
+                    <div class="information" id="box71">
+                        <div class="trigger" data-popup-id="Head of Department">
+                            <img class="employee-photo" src="/image/Ivan_Zjidkov.jpg" alt="Фото сотрудника">Иван Жидков
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_this">
+                <div class="company_structure1" onclick="viewdiv('box72');">Помощник руководителя отдела</div>
+                <div class="info-container">
+                    <div class="information" id="box72">
+                        <div class="trigger" data-popup-id="Assistant to the Head of the Department">
+                            <img class="employee-photo" src="/image/net_photo7.jpg" alt="Фото сотрудника">Ксения Сидоренко
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- авторизация -->
+<!--<div id="login-form">
+    <input type="text" id="username" placeholder="Логин">
+    <input type="password" id="password" placeholder="Пароль">
+    <button id="submit-login">Войти</button>
+</div>-->
+
+<script src="index.js"></script>
+</body>
+</html>
